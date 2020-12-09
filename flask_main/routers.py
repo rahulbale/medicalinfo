@@ -113,7 +113,7 @@ def contact():
         else:
             msg = Message(subject=f"Mail from {name}",
                           body=f"Name: {name}\nE-mail: {email}\nPhone-no: {phone_no}\n\n\n{message}" ,
-                          sender=email, recipients=['m8605199144@gmail.com'])
+                          sender=email, recipients=['for_try@gmail.com'])
             'msg.body = """From: %s <%s>%s""" % (name, email, message)'
             mail.send(msg)
 
