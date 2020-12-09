@@ -54,9 +54,6 @@ def mainfile():
 def information():
     return render_template('information.html',title='Information')
 
-@app.route("/result")
-def result():
-    return render_template('result.html',title='result')
 
 @app.route("/register", methods=['GET', 'POST'])
 def registration():
@@ -126,7 +123,6 @@ def contact():
         return render_template('contact.html', form=form)
 
 
-"""
 def ValuePredictor(to_predict_list, size):
     to_predict = np.array(to_predict_list).reshape(-1, size)
     if (size == 8):  # Diabetes
@@ -186,4 +182,3 @@ def result():
                 prediction = "Oops! You have liver disease."
             return (render_template("result.html", prediction=prediction))
 
-"""
