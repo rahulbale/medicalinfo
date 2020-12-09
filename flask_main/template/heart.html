@@ -1,0 +1,284 @@
+
+
+{% extends "layout2.html" %}
+{% block content %}
+
+<!---
+<div class="landing">
+     <div class="home-wrap">
+         <img src="static/heart/heart.jpg"  class="img-responsive" alt="Responsive image">
+         <div class="middle">
+             <div class="mouse"></div>
+         </div>
+     </div>
+</div>
+
+-->
+
+<div class="landing">
+     <div class="home-wrap">
+         <div class="howe-inner" style="background-image: url('../static/heart/heart.jpg');width: 100%;max-width: 100%;height: 650px;background-attachment: fixed;background-size: cover;background-size: 100% 100%;">
+         <div class="middle">
+            <div class="mouse"></div>
+        </div>
+         </div>
+     </div>
+</div>
+
+
+
+
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1 style="padding-bottom: 2.2rem;"> Welcome to Medical Info of Heart Section</h1>
+
+        <h4>Here you will know your health ragarding heart desies.</h4>
+        <div class="heading-underline"></div>
+    </div>
+</div>
+
+<div id="section" class="offset">
+    <div class="fixed-backgrond">
+        <div class="container">
+
+            <div class="row section">
+                <div class="col border border-info">
+                    <h1 >Heart Disease</h1>
+                    <h4>Know the detail realted to Heart Disease!!</h4>
+                    <p class="text-muted">
+                        We have provided some information regarding the heart disease.
+                    </p>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal">Read More ></button>
+
+                    <!---- Model Section --->
+
+                    <div class="modal fade" id="myModal" data-backdrop="static" role="dialog">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable model-lg" style="width: 55%;max-width: 70%;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"
+                                    style="color: black; font-size: 30px; font-weight: 500;">Heart Disease!!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span></button>
+                                </div>
+
+                                <!---- Modal Body Section --->
+
+                                <div class="modal-body">
+                                    <img src="static/heart/heart_model.jpg" class="mx-auto d-block"
+                                       style="width: 60%;height: 250px;background-attachment: fixed;">
+                                    <p style="color: #ff0000; font-size: 20px; font-weight: 200;margin-top: 50px;">Heart disease refers to any condition
+                                      affecting the heart.There are many types, some of which are preventable.</p>
+                                    <p>Unlike cardiovascular disease, which includes problems with the
+                                      entirecirculatory system, heart disease affects only the heart.</p>
+
+
+                                    <!---- Symptoms Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">What are the symptoms of heart disease?</h5>
+                                    <p>Sometimes heart disease may be “silent” and not diagnosed until a person experiences signs or
+                                      symptoms of a heart attack,heart failure, or an arrhythmia.
+                                      When these events happen, symptoms may include</p>
+                                    <ul>
+                                        <li>Chest pain, chest tightness, chest pressure and chest discomfort (angina).</li>
+                                        <li>Shortness of breath.</li>
+                                        <li>Pain, numbness, weakness or coldness in your legs or arms if the blood vessels in those parts of your body are narrowed.</li>
+                                        <li>Pain in the neck, jaw, throat, upper abdomen or back.</li>
+                                    </ul>
+
+                                    <!---- Info Section --->
+
+                                    <div class="info" style="background-color: #e7f3fe ;border-left: 6px solid #2196F3;padding-top: 10px;padding-bottom: 10px;">
+                                        <p><strong style="color: black; font-size: 20px; font-weight: 100;">Info!</strong><br>Please if you fill any of this Symptoms visit the Doctor as possible as you can.</p>
+                                        <p>This website just gives you rough information so please visit the doctor.</p>
+                                    </div>
+
+
+                                    <!---- TYPES Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">MOST COMMON TYPES !!!</h5>
+                                    <ul>
+                                        <li><a href="#">Coronary heart disease</a>: Coronary heart disease (CHD), or coronary artery disease,
+                                          develops when the coronary arteries become too narrow. </li>
+                                        <li><a href="#">High blood pressure (hypertension)</a>:A condition in which the force of the blood
+                                              against the artery walls is too high.</li>
+                                        <li><a href="#">High blood pressure (hypertension)</a>:A condition in which the force of the blood
+                                              against the artery walls is too high.</li>
+                                        <li><a href="#">Cardiac arrest</a>:Sudden, unexpected loss of heart function, breathing and consciousness.
+                                            In cardiac arrest, the heart abruptly stops beating. Without prompt intervention,
+                                              it can result in the person's death.The main symptom is loss of consciousness and unresponsiveness.</li>
+                                        <li><a href="#">Heart failure</a>:A chronic condition in which the heart doesn't pump blood as well as it should.
+                                            Heart failure can occur if the heart cannot pump (systolic) or fill (diastolic) adequately.</li>
+                                        <li><a href="#">Stroke</a>:Damage to the brain from interruption of its blood supply.
+                                                                A stroke is a medical emergency.</li>
+                                        <li><a href="#">Arrhythmia</a>:Improper beating of the heart, whether irregular, too fast or too slow.</li>
+                                    </ul>
+
+                                    <!---- When Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">When to see a doctor</h5>
+                                    <p>Seek emergency medical care if you have these heart disease symptoms:</p>
+                                    <ul>
+                                        <li>Chest pain</li>
+                                        <li>Shortness of breath</li>
+                                        <li>Fainting</li>
+                                    </ul>
+                                </div>
+
+                                <!---- End of all Section --->
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="box">
+                        <div class="b b1 "></div>
+                        <div class="b b2"></div>
+                        <i class="fas fa-heartbeat fa-5x text-center"></i>
+                        <div class="b b3"></div>
+                        <div class="b b4"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="jumbotron" id="heading">
+     <div class="row dark text-center">
+        <div class="col-12">
+            <h1 class="heading ">Heart Disease Checkup !!</h1>
+            <div class="heading-underline"></div>
+        </div>
+     </div>
+</div>
+
+<div class="offset" id="form-details">
+<div class="container">
+    <div class="row dark1">
+
+        <div class="col-12">
+            <h2 class="heading text-center">Enter yours value :</h2>
+        </div>
+        <form class="form-class" action="{{ url_for('result')}}" method="post" id="form-class-id">
+            <div class="row g-3">
+                <div class="col-md-6 mb-3 form-class-id">
+                        <label for="age">Age : </label>
+                        <input type="text" class="form-control" id="age" name="age" placeholder=" Range form (0 to 100)">
+                </div>
+                <div class="col-md-6 mb-3">
+                        <label for="sex">Enter Sex : </label>
+                         <select class="form-control" id="sex" name = "sex" required="required" placeholder="Enter your sex">
+                            <option value="0">Female</option>
+                            <option value="1">Male</option>
+                         </select>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                    <div class="col-md-6 mb-3">
+                        <label for="cp">Chest Pain Type</label>
+                          <select class="form-control" id="cp" name = "cp" required="required" placeholder="Chest Pain Type">
+                            <option value="0">Typical Angina</option>
+                            <option value="1">Atypical Angina</option>
+                            <option value="2">Non-Anginal Pain</option>
+                            <option value="3">Asymptomatic</option>
+                          </select>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="trestbps">Enter Resting Blood Pressure (in mm Hg)</label>
+                         <input class="form-control" type="number" id="trestbps" name="trestbps" required="required" placeholder="Enter Numeric value( eg : 140)mm/Hg">
+                    </div>
+            </div>
+                <div class="row g-3">
+                    <div class="col-md-6 mb-3">
+                        <label for="chol">Enter Cholestoral :</label>
+                        <input type="number" class="form-control" id="chol" name="cholestoral" placeholder="Enter Numeric value( eg : 289) mg/dl">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                         <label for="fbs">Enter Fasting Blood Sugar</label>
+                          <select class="form-control" id="fbs" name = "fbs" required="required" placeholder="Fasting Blood Sugar">
+                            <option value="0">Fasting Blood Sugar < 120 mg/dl</option>
+                            <option value="1">Fasting Blood Sugar > 120 mg/dl</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6 mb-3">
+                         <label for="restecg">Enter Resting electrocardiographic results :</label>
+                         <select class="form-control" type="number" id="restecg" name="restecg" required="required" placeholder="Resting Electro-cardiographic Result">
+                          <option value="0">Normal</option>
+                          <option value="1">having ST-T wave abnormality</option>
+                          <option value="2">showing probable or definite left ventricular hypertrophy</option>
+                         </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="thalach">Maximum heart rate achieved :</label>
+                        <input type="text" class="form-control" id="thalach" name="thalach" placeholder="Enter Numeric value eg:140 mm/Hg">
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6 mb-3">
+                        <label for="exang">Exercise induced angina : </label>
+                         <select class="form-control" id="exang" name = "exang" required="required" >
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                          </select>
+
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="oldpeak">ST depression exercise relative to rest  :</label>
+                        <input type="text" class="form-control" id="oldpeak" name="oldpeak" placeholder="Enter Numeric value eg: 3.5">
+                    </div>
+                </div>
+                 <div class="row g-3">
+                    <div class="col-md-6 mb-3">
+                        <label for="slope">Slope of the peak exercise ST segment :</label>
+                         <select class="form-control" type="number" id="slope" name="slope" required="required" placeholder="Enter Slope of the peak">
+                          <option value="0">upsloping</option>
+                          <option value="1">flat</option>
+                          <option value="2">downsloping</option>
+                         </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="ca">Number of major vessels flourosopy :</label>
+                         <select class="form-control" type="number" id="ca" name="ca" required="required" placeholder="Enter Number of major vessels flourosopy">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                         </select>
+                    </div>
+                </div>
+                 <div class="row g-3">
+                    <div class="col-md-6 mb-3">
+                        <label for="thal">Thal : </label>
+
+                        <select class="form-control" type="number" id="thal" name="thal" required="required" placeholder="Resting Electro-cardiographic Result">
+                          <option value="0">Normal</option>
+                          <option value="1">having ST-T wave abnormality</option>
+                          <option value="2">showing probable or definite left ventricular hypertrophy</option>
+                         </select>
+                    </div>
+
+                </div>
+                <div class="col-md-12 text-center">
+                    <button type="submit"  value="Submit" class="btn btn-success  btn-lg">Predict!!</button>
+                </div>
+
+        </form>
+    </div>
+</div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,37 @@
+/*-- Wrapper section --*/
+
+.wrapper{
+    display: flex;
+    position: relative;
+    margin-left: 15px;
+
+}
+
+.wrapper .sidebar{
+    background: #4b4276;
+    position: relative;
+    width: 320px;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.wrapper .sidebar h2{
+    color: #fff;
+    text-trandfrom: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.wrapper .sidebar .nav a{
+    color: #bdb8d7;
+    display: block;
+}
+.wrapper .sidebar .nav a .fas{
+    color: black;
+}
+
+.wrapper .sidebar .nav:hover a{
+    color: red;
+}
+

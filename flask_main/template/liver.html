@@ -1,0 +1,226 @@
+
+
+{% extends "layout2.html" %}
+{% block content %}
+
+
+<div class="landing">
+     <div class="home-wrap">
+         <div class="responsive" style="background-image: url('../static/liver/liver.jpg');
+         width: 100%;max-width: 100%;height: 600px;backgound-position: center;
+         background-size: cover;background-attachment: fixed;">
+         <div class="middle">
+            <div class="mouse"></div>
+        </div>
+         </div>
+     </div>
+</div>
+
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1 style="padding-bottom: 2.2rem;"> Welcome to Medical Info of Liver Section</h1>
+
+        <h4>Here you will know your health ragarding Liver desies.</h4>
+        <div class="heading-underline"></div>
+    </div>
+</div>
+
+
+<div id="section" class="offset">
+    <div class="fixed-backgrond">
+        <div class="container">
+
+            <div class="row section">
+                <div class="col border border-info">
+                    <h1 >Liver Disease</h1>
+                    <h4>Know the detail realted to Liver Disease!!</h4>
+                    <p class="text-muted">
+                        We have provided some information regarding the Liver disease.
+                    </p>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal">Read More ></button>
+
+
+                    <!---- Model Section --->
+
+                    <div class="modal fade" id="myModal" data-backdrop="static" role="dialog">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable model-lg" style="width: 55%;max-width: 70%;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"
+                                    style="color: black; font-size: 30px; font-weight: 500;"> Liver Disease!!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="static/liver/liver_model.jpg" class="mx-auto d-block"
+                                       style="width: 60%;height: 250px;background-attachment: fixed;">
+                                    <p style="color: #ff0000; font-size: 20px; font-weight: 200;margin-top: 50px;">The liver plays an
+                                      important role in many bodily functions from protein production and blood clotting
+                                      to cholesterol,glucose (sugar), and iron metabolism.</p>
+                                    <p>Liver disease is any disturbance of liver function that causes illness. The liver
+                                      is responsible for many critical functions within the body and should it become
+                                      diseased or injured, the loss of those functions can cause significant damage
+                                      to the body. Liver disease is also referred to as hepatic disease.</p>
+
+
+                                    <!---- Symptoms Section --->
+
+                                    <h5 style="color: black; font-size: 20px;
+                                        font-weight: 100;padding-top: 20px;">What are the signs and symptoms of liver disease?</h5>
+                                    <p>Liver disease doesn't always cause noticeable signs and symptoms. If signs and symptoms
+                                      of liver disease do occur, the may include:</p>
+                                    <ul>
+                                        <li>Skin and eyes that appear yellowish (jaundice)</li>
+                                        <li>Abdominal pain and swelling</li>
+                                        <li>Swelling in the legs and ankles</li>
+                                        <li>Itchy skin</li>
+                                        <li>Dark urine color</li>
+                                        <li>Nausea or vomiting</li>
+                                        <li>Loss of appetite</li>
+                                    </ul>
+
+                                    <!---- Info Section --->
+
+                                    <div class="info" style="background-color: #e7f3fe ;border-left: 6px solid #2196F3;padding-top: 10px;padding-bottom: 10px;">
+                                        <p><strong style="color: black; font-size: 20px; font-weight: 100;">Info!</strong><br>Please if you fill any of this Symptoms visit the Doctor as possible as you can.</p>
+                                        <p>This website just gives you rough information so please visit the doctor.</p>
+                                    </div>
+
+
+
+                                    <!---- Causes Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">What causes liver disease?</h5>
+                                    <p>Many diseases and conditions can affect the liver, for example, certain drugs like excessive amounts of
+                                      acetaminophen, and acetaminophen combination medications like Vicodin and Norco, as well as statins,
+                                      cirrhosis, alcohol abuse, hepatitis A, B, C, D, and E, infectious mononucleosis (Epstein Barr virus),
+                                      nonalcoholic fatty liver disease (NASH), and iron overload (hemochromatosis).</p>
+
+                                    <!---- TYPES Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">MOST COMMON TYPES !!!</h5>
+                                    <ul>
+                                        <li><a href="#">Non-alcoholic fatty liver disease (NAFLD)</a>: Most people have no symptoms. In rare cases, people may
+                                          experience fatigue, pain or weight loss. Over time, inflammation and scarring of the liver (cirrhosis) can occur. </li>
+                                        <li><a href="#">Hepatitis C</a>:Most people have no symptoms. Those who do develop symptoms may have fatigue,
+                                          nausea, loss of appetite and yellowing of the eyes and skin.</li>
+                                        <li><a href="#">Hepatitis B</a>:Symptoms are variable and include yellowing of the eyes, abdominal pain and dark urine.
+                                          Some people, particularly children, don't experience any symptoms.
+                                          In chronic cases, liver failure, cancer or scarring can occur.</li>
+                                        <li><a href="#">Cirrhosis</a>:Initially patients may experience fatigue, weakness and weight loss. During
+                                          later stages, patients may develop jaundice (yellowing of the skin), gastrointestinal bleeding,
+                                          abdominal swelling and confusion.</li>
+                                        <li><a href="#">Alcoholic hepatitis</a>:Symptoms include yellow skin and
+                                          eyes along with increasing stomach size due to fluid accumulation.</li>
+                                    </ul>
+
+
+                                    <!---- When Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">When to see a doctor</h5>
+                                    <p>Make an appointment with your doctor if you have any persistent signs or symptoms that worry you.
+                                      Seek immediate medical attention if you have abdominal pain that is so severe that you can't stay still.</p>
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">Diagnosis</h5>
+                                    <p>Finding the cause and extent of liver damage is important in guiding treatment.
+                                      Your doctor is likely to start with a health history and thorough physical examination.
+                                      Your doctor may then recommend:</p>
+                                    <ul>
+                                        <li>Blood tests.</li>
+                                        <li>Imaging tests.</li>
+                                        <li>Checking a tissue sample.</li>
+                                    </ul>
+                                </div>
+
+                                <!---- End of all Section --->
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="box">
+                        <div class="b b1 text-center"></div>
+                        <div class="b b2"></div>
+                        <img src="static/liver/icon-liver.png">
+                        <div class="b b3"></div>
+                        <div class="b b4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="jumbotron" id="heading">
+     <div class="row dark text-center">
+        <div class="col-12">
+            <h1 class="heading ">Liver Disease Checkup !!</h1>
+            <div class="heading-underline"></div>
+        </div>
+     </div>
+</div>
+
+<div class="offset" id="form-details">
+<div class="container">
+    <div class="row dark1">
+
+        <div class="col-12">
+            <h2 class="heading text-center">Enter yours value :</h2>
+        </div>
+        <form class="form-class" action="/result" method="post" id="form-class-id">
+            <div class="row">
+                    <div class="col-md-6 mb-3 form-class-id">
+                        <label for="Age">Age : </label>
+                        <input type="text" class="form-control" id="Age" name="Age" placeholder=" Range form (0 to 100)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="Gender">Gender : </label>
+                        <select class="form-control" id="Gender" name = "Gender" required="required" placeholder="Enter your sex">
+                            <option value="0">Female</option>
+                            <option value="1">Male</option>
+                         </select>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Total_Bilirubin">TB Total Bilirubin :</label>
+                        <input type="text" class="form-control" id="Total_Bilirubin" name="Total_Bilirubin" placeholder="Enter values TB Total Bilirubin (eg 2.6)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="Alkaline_Phosphotase"> Alkphos Alkaline Phosphotase :</label>
+                        <input type="text" class="form-control" id="Alkaline_Phosphotase" name="Total_Bilirubin" placeholder=" Enter Numeric value( eg : 140)">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Alamine_Aminotransferase"> Alamine Aminotransferase :</label>
+                        <input type="text" class="form-control" id="Alamine_Aminotransferase" name="Alamine_Aminotransferase" placeholder="Enter Numeric value( eg : 28)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="Total_Protiens">Total Protiens : </label>
+                        <input type="text" class="form-control" id="Total_Protiens" name="Total_Protiens" placeholder="Enter Numeric value( eg : 6.4)">
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="Albumin_and_Globulin_Ratio"> Albumin and Globulin Ratio :</label>
+                    <input type="text" class="form-control" id="Albumin_and_Globulin_Ratio" name="Albumin_and_Globulin_Ratio" placeholder="Enter Numeric value( eg : 0.9)">
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-success  btn-lg">Predict!!</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+</div>
+
+{% endblock content %}

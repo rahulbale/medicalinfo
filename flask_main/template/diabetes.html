@@ -1,0 +1,237 @@
+
+{% extends "layout2.html" %}
+{% block content %}
+
+
+<!---
+<div class="landing">
+     <div class="home-wrap">
+         <img src="static/diabetes/diabetes.jpg"  class="img-responsive" alt="Responsive image">
+         <div class="middle">
+             <div class="mouse"></div>
+         </div>
+     </div>
+</div>
+
+-->
+
+<div class="landing">
+     <div class="home-wrap">
+         <div class="howe-inner" style="background-image: url('../static/diabetes/diabetes.jpg');width: 100%;max-width: 100%;height: 650px;background-attachment: fixed;background-size: cover;background-size: 100% 100%;">
+         <div class="middle">
+            <div class="mouse"></div>
+        </div>
+         </div>
+     </div>
+</div>
+
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1 style="padding-bottom: 2.2rem;"> Welcome to Medical Info of Diabetes Section</h1>
+
+        <h4>Here you will know your health ragarding Diabetes desies.</h4>
+        <div class="heading-underline"></div>
+    </div>
+</div>
+
+<div id="section" class="offset">
+     <div class="fixed-backgrond">
+         <div class="container">
+
+             <div class="row section">
+                <div class="col border border-info">
+                     <h1 >Diabetes Disease</h1>
+                     <h4>Know the detail realted to Diabetes Disease!!</h4>
+                     <p class="text-muted">
+                            We have provided some information regarding the Diabetes disease.
+                     </p>
+                     <button class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal">Read More ></button>
+                 </div>
+                        <!---- Model Section --->
+                 <div class="modal fade" id="myModal" data-backdrop="static" role="dialog">
+                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable model-lg" style="width: 55%;max-width: 70%;">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"
+                                    style="color: black; font-size: 30px; font-weight: 500;">Diabetes disease.</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                             </div>
+                             <div class="modal-body">
+                                    <img src="static/diabetes/diabetes_model.jpg" class="mx-auto d-block"
+                                       style="width: 60%;height: 250px;background-attachment: fixed;">
+                                    <p style="color: #ff0000; font-size: 20px; font-weight: 200;margin-top: 50px;">Diabetes
+                                        is a condition that impairs the body’s ability to process blood glucose, otherwise known as blood sugar.</p>
+                                    <p>Without ongoing, careful management, diabetes can lead to a buildup of sugars in the blood,
+                                        which can increase the risk of dangerous complications, including stroke and heart disease.
+                                        Different kinds of diabetes can occur, and managing the condition depends on the type.
+                                        Not all forms of diabetes stem from a person being overweight or leading an inactive lifestyle.
+                                        In fact, some are present from childhood.</p>
+
+
+                                    <!---- Info Note Section --->
+
+                                    <div class="info" style="background-color: #e7f3fe ;border-left: 6px solid #2196F3;padding-top: 10px;padding-bottom: 10px;">
+                                        <p><strong style="color: black; font-size: 20px; font-weight: 100;">Info!</strong><br>Please if you fill any of this Symptoms visit the Doctor as possible as you can.</p>
+                                        <p>This website just gives you rough information so please visit the doctor.</p>
+                                    </div>
+
+                                    <!---- TYPES Section --->
+
+                                    <h5 style="color: black; font-size: 20px;font-weight: 100;padding-top: 20px;">MOST COMMON TYPES!!!</h5>
+                                    <p>Three major diabetes types can develop: Type 1, type 2, and gestational diabetes.</p>
+                                    <ul>
+                                        <li><a href="#">Type I diabetes:</a>Also known as juvenile diabetes, this type occurs when the body fails to produce insulin.
+                                            People with type I diabetes are insulin-dependent, which means they must take artificial insulin daily to stay alive.</li>
+                                        <li><a href="#">Type 2 diabetes:</a>Type 2 diabetes affects the way the body uses insulin. While the body still makes insulin,
+                                            unlike in type I, the cells in the body do not respond to it as effectively as they once did. This is the most common type
+                                            of diabetes, according to the National Institute of Diabetes and Digestive and Kidney Diseases,
+                                            and it has strong links with obesity.</li>
+                                        <li><a href="#">Gestational diabetes:</a>This type occurs in women during pregnancy when the body can become less
+                                            sensitive to insulin. Gestational diabetes does not occur in all women and usually resolves after giving birth.</li>
+                                        <li><a href="#">Prediabetes:</a> A condition in which blood sugar is high, but not high enough to be type 2 diabetes.
+                                            Without intervention, it's likely to become type 2 diabetes within 10 years.
+                                            Many people with prediabetes have no symptoms.</li>
+                                    </ul>
+
+
+                                    <!---- Health problems Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">What health problems
+                                        can people with diabetes develop?</h5>
+                                    <p>Over time, high blood glucose leads to problems such as:</p>
+                                    <ul>
+                                        <li>Heart disease</li>
+                                        <li>Stroke</li>
+                                        <li>Kidney disease</li>
+                                        <li>Eye problems</li>
+                                        <li>Dental disease</li>
+                                        <li>Nerve damage</li>
+                                        <li>Foot problems</li>
+                                    </ul>
+
+                                    <!---- Exercises Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">Exercise and diet tips</h5>
+                                    <p>If a doctor diagnoses a person with type 2 diabetes, they will often recommend making
+                                        lifestyle changes to support weight loss and overall health.</p><br>
+                                    <p>Steps a person can take to embrace a lifestyle with diabetes include:</p>
+                                     <ul>
+                                         <li>Eating a diet high in fresh, nutritious foods, including whole grains, fruits, vegetables,
+                                             lean proteins, low-fat dairy, and healthy fat sources, such as nuts.</li>
+                                         <li>Avoiding high-sugar foods that provide empty calories, or calories that do not have
+                                            other nutritional benefits, such as sweetened sodas, fried foods, and high-sugar desserts.</li>
+                                         <li>Refraining from drinking excessive amounts of alcohol or keeping intake to less than one
+                                             drink a day for women or two drinks a day for men.</li>
+                                         <li>Engaging in at least 30 minutes exercise a day on at least 5 days of the week,
+                                             such as of walking, aerobics, riding a bike, or swimming.</li>
+                                         <li>Recognizing signs of low blood sugar when exercising,
+                                             including dizziness, confusion, weakness, and profuse sweating.</li>
+                                    </ul>
+
+                                    <!---- Affective Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">How much is too much?</h5>
+                                    <p>Insulin helps people with diabetes live an active lifestyle. However, it can lead to serious side effects,
+                                        especially if a person administers too much.</p>
+                                    <p>Excessive insulin can cause hypoglycemia, or extremely low blood sugar, and lead to nausea, sweating, and shaking.</p>
+                                    <p>It is essential that people measure insulin carefully and eat a consistent diet
+                                        that balances blood sugar levels as much as possible.</p>
+
+
+                                    <!---- End of all Section --->
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col">
+                        <div class="box">
+                            <i class="far fa-circle fa-5x"></i>
+                            <div class="b b1 text-center"></div>
+                            <div class="b b2"></div>
+                            <div class="b b3"></div>
+                            <div class="b b4"></div>
+                         </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+</div>
+
+
+
+<div class="jumbotron" id="heading">
+     <div class="row dark text-center">
+        <div class="col-12">
+            <h1 class="heading ">Diabetes Disease Checkup !!</h1>
+            <div class="heading-underline"></div>
+        </div>
+     </div>
+</div>
+
+<div class="offset" id="form-details">
+<div class="container">
+    <div class="row dark1">
+        <div class="col-12">
+            <h2 class="heading text-center">Enter yours value :</h2>
+        </div>
+        <form class="form-class" action="/result" method="post" id="form-class-id">
+            <div class="row">
+                    <div class="col-md-6 mb-3 form-class-id">
+                        <label for="Pregnancies">Pregnancies : </label>
+                        <input type="text" class="form-control" id="Pregnancies" name="Pregnancies" placeholder="Enter Numeric value( eg : 5)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="Glucose">Glucose : </label>
+                        <input type="text" class="form-control" id="Glucose" name="Glucose" placeholder="Enter Numeric value( eg : 89)">
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="BloodPressure">BloodPressure :</label>
+                        <input type="text" class="form-control" id="BloodPressure" name="BloodPressure" placeholder="Enter Numeric value( eg : 66)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="SkinThickness">SkinThickness :</label>
+                        <input type="text" class="form-control" id="SkinThickness" name="SkinThickness" placeholder=" Enter Numeric value( eg : 45) ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Insulin">Insulin :</label>
+                        <input type="text" class="form-control" id="Insulin" name="Insulin" placeholder="Enter Numeric value( eg : 94)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="BMI">BMI : </label>
+                        <input type="text" class="form-control" id="BMI" name="BMI" placeholder="Enter Numeric value( eg : 25.1)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="DiabetesPedigreeFunction">DiabetesPedigreeFunction :</label>
+                        <input type="text" class="form-control" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" placeholder="Enter Numeric value( eg : 1.75)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="Age">Age :</label>
+                        <input type="text" class="form-control" id="Age" name="Age" placeholder="Enter Numeric value( eg : 31)">
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-success  btn-lg">Predict!!</button>
+                </div>
+
+
+        </form>
+
+    </div>
+</div>
+</div>
+
+
+{% endblock content %}       

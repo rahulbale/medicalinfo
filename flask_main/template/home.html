@@ -1,0 +1,234 @@
+{% extends "layout1.html" %}
+{% block content %}
+
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="8000">
+            <div class="overlay-image" style=" background-image: url('../static/extra_images/slider1.jpg');"></div>
+            <div class="carousel-caption text-left">
+                <h1>Welcome to Medical Info</h1>
+                <p>Application of AI in the healthcare can have a major impact on the daily working routine of the Doctors. It can reduce the workload of the doctors immensly.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="overlay-image" style=" background-image: url('../static/extra_images/slider2.jpg');"></div>
+            <div class="carousel-caption text-left">
+                <h1>Making the Big World for Healthcare Smaller</h1>
+                <p>Still in 2020 many people are not able to get proper healthcare services because of not a wide reach of the doctors and hospitals. Using AI people can have a personal doctor at home.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="overlay-image" style="background-image: url('../static/extra_images/slidernew.jpg');" ></div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<!---- Start Feature ----->
+
+<div id="features" class="offset">
+<div class="jumbotron">
+<div class="narrow text-center">
+    <div class="col-12">
+        <h1 class="heading">FEATURES</h1>
+        <div class="heading-underline"></div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <a href="{{ url_for('about') }}" >
+                <div class="feature">
+                  <i class="iconbtn fas fa-book-medical fa-6x" data-fa-transform="shrink-3 up-5"></i>
+                   <h3 class="heading">About Us</h3>
+                   <p>Know the health without the doctor.</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-md-4">
+             <a href="{{ url_for('mainfile') }}">
+                <div class="feature">
+                  <i class="iconbtn fas fa-laptop-code fa-6x" data-fa-transform="shrink-4.5 up-4.5"></i>
+                <h3 class="heading">Check Up</h3>
+                <p>Cleck in ckeckup for more details.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a href="{{ url_for('information') }}">
+                <div class="feature">
+                      <i class="iconbtn fas fa-american-sign-language-interpreting fa-6x" data-fa-transform="shrink-4 up-5"></i>
+                      <h3 class="heading">Information</h3>
+                    <p>Know the health without the doctor.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!----  Ending Feature ----->
+
+<!-- Start of Information -->
+<div id="information" class="offset">
+    <div class="container" id="info">
+        <div class="narrow">
+            <div class="col-12">
+                <h1 class="heading" style="padding-top: 2.5rem;text-align: center;">General Information</h1>
+                <div class="heading-underline"></div>
+            </div>
+            <div class="row"  style="padding-top: 1.5rem;">
+                <div class="col-md-5">
+                    <img class="info-image img-fluid mx-auto" src="../static/extra_images/doctors1.jpg" alt="Health Care Professionals">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="info-heading" style="font-weight: 300;line-height: 1;letter-spacing: -.05rem;color: #000;font-size: 32px;">Less of Doctors<span class="text-muted">: India is facing a huge shortage of Doctors.</span></h2>
+                    <p style="font-size: 18px;margin: 20px 0 20px;">The shortage of doctors, nurses, technicians and infrastructure as given by the report of WHO that 0.75% doctors and 2.09% nurses are present per 1000 people.
+                        Additionally, Indian healthcare is also facing acute shortage of hospital beds with 1.3% hospital beds per 1000 population.</p>
+                </div>
+            </div>
+            <hr class="info-divider" style="margin: 4rem 0;">
+            <div class="row">
+                <div class="col-md-5 order-md-2">
+                    <img class="info-image img-fluid mx-auto  text-center" src="../static/extra_images/accessibility.png"  alt="Generic placeholder image">
+                </div>
+                <div class="col-md-7 order-md-1">
+                    <h2 class="info-heading" style="font-weight: 300;line-height: 1;letter-spacing: -.05rem;color: #000;font-size: 32px;">Low Accessibility<span class="text-muted">: Less Accessibility to Healthcare across nation.</span></h2>
+                    <p style="font-size: 18px;margin: 20px 0 20px;">The physical access to hospitals is still the major problem to both  Rural and the Urban India.
+                        By making use of web technology and AI people in remote areas can also get access to the health-care in free.</p>
+                </div>
+
+            </div>
+            <hr class="info-divider" style="margin: 4rem 0;">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="info-image img-fluid" src="../static/extra_images/affordable.jpg" width="300" height="300" alt="Generic placeholder image">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="info-heading" style="font-weight: 300;line-height: 1;letter-spacing: -.05rem;color: #000;font-size: 32px;">Affordability:
+                        <span class="text-muted" >Good healthcare facilities still a dream of the common people in India.</span></h2>
+                    <p  style="font-size: 18px;margin: 20px 0 20px;">It is the biggest problem many Poor and people with unavailablity of money are hit the most as by the government estimates,
+                        approx 63 million people are faced with poverty every year because of their healthcare expenditure.
+                        Using the technology in a better way healthcare can be made affordable for everyone in the India as well as all over the world.</p>
+                </div>
+
+            </div>
+            <hr class="featurette-divider" style="margin: 4rem 0;">
+
+        </div>
+    </div>
+</div>
+<!-- END of Information -->
+
+
+
+<!---- Start Resources ----->
+
+<div class="offset" id="resources">
+<div class="fixed-background" >
+    <div class="row dark text-center">
+        <div class="col-12">
+            <h1 class="heading">Built With Care</h1>
+            <div class="heading-underline"></div>
+        </div>
+
+        <div class="col-md-4">
+            <h3>Html 5</h3>
+            <div class="feature">
+                <i class="fas fa-code fa-3x"></i>
+            </div>
+            <p class="lead">Built with latest, HTML5.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Css</h3>
+            <div class="feature">
+                <i class="fab fa-css3-alt fa-3x"></i>
+            </div>
+            <p class="lead">Built with latest, Css.</p>
+        </div><br><br>
+
+        <div class="col-md-4">
+            <h3>BOOTSTRAP</h3>
+            <div class="feature">
+                <i class="fas fa-bold fa-3x"></i>
+            </div>
+            <p class="lead">Built with latest BOOTSTRAP.</p>
+        </div>
+        <div class="col-md-6">
+            <h3>Flask</h3>
+            <div class="feature">
+                <i class="fas fa-flask fa-3x" ></i>
+            </div>
+            <p class="lead">Built with latest Flask.</p>
+        </div>
+        <div class="col-md-5">
+
+            <h3>Machine Learning</h3>
+
+            <div class="feature">
+                <i class="fas fa-laptop-code fa-3x"></i>
+            </div>
+
+            <p class="lead">Built with Machine Learning.</p>
+    </div>
+
+    </div>
+
+</div>
+</div>
+<!---- Ending Resources ----->
+
+<!---- Start Portfolid ----->
+
+<div id="portfolid" class="offset">
+    <div class="jumbotron">
+        <div class="narrow text-center">
+            <h1 class="heading">Portfolid</h1>
+            <div class="heading-underline"></div>
+        </div>
+        <div class="portfolid-section">
+            <div class="container" id="portfolid-section">
+                <div class="row">
+                    <div class="col-lg-6 d-flex">
+                        <div class="portfolid-img">
+                            <img class="img-fluid" src="../static/extra_images/profile.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                            <blockquote>
+                                <p>
+                                    <i class="fas fa-quote-left fa-2x"></i>
+                                    I am Rahul Bale. Building systems that offer direct value to
+                                    the unaffortable people for medical discription checkup.
+                                    Explore the website for more fortune experience.
+                                    Check the Portfolid for more information regarding me.
+                                </p>
+                                <hr class="portfolid-hr">
+                                <a class="btn btn-danger btn-lg" href="#portfolid">Read More</a>
+                            </blockquote>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------ Ending Portfolid ----->
+
+
+{% endblock content %}

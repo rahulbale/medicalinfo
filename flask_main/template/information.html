@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+
+    {% if title %}
+        <title>Flask Blog - {{ title }}</title>
+    {% else %}
+        <title>Flask Blog</title>
+    {% endif %}
+
+<style>
+
+.nav{
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.0.1);
+    border-top: 1px solid rgba(225,225,225,0.1);
+}
+.caption{
+    width: 100%;
+    max-width:100%;
+    position: absolute;
+    top: 38%;
+    Z-index: 1;
+    color : black;
+}
+
+
+.container h2{
+   color: red;
+   text-transform: uppercase;
+   text-align: center;
+   padding-top: 80px;
+   margin-top: 60px;
+
+}
+
+.heading-underline{
+    width: 15rem;
+    height: .2rem;
+    background-color:  #00e6ac;
+    margin: 1rem auto 3rem;
+}
+
+.center{
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+</style>
+
+</head>
+
+
+
+{% extends "layout1.html" %}
+{% block content %}
+
+<div class="landing">
+     <div class="home-wrap">
+         <div class="howe-inner" style="background-image: url('../static/extra_images/information.jpg');width: 100%;max-width: 100%;height: 650px;background-attachment: fixed;background-size: cover;background-size: 100% 100%;">
+     </div>
+</div>
+
+<div class="caption text-right">
+    <div class="container">
+        <h1 style="font-size: 2.9rem;letter-spacing:.1rem;padding-bottom: 1rem;text-shadow: .1rem .1rem .10rem black">Healing health care. Together.</h1>
+        <p style="font-size: 1.5rem;letter-spacing:.1rem">“Good health is not something we can buy.</p>
+        <p style="font-size: 1.5rem;letter-spacing:.1rem"> However, it can be an extremely valuable savings account.”</p>
+    </div>
+</div>
+
+
+
+<div class="container" data-target="#navbar-info">
+
+        <ul class="nav justify-content-center" style="background-color: #e7f3fe ;border: 2px solid black ; margin-top: 20px;">
+            <li class="nav-item text-center" style="margin-right: 20px;margin-left: 20px;">
+                <a class="navbar-brand" href="#heart-sec"><i class="fa fa-heart" aria-hidden="true"></i>Heart</a>
+            </li>
+              <li class="nav-item" style="margin-right: 20px;margin-left: 20px;">
+                <a class="navbar-brand" href="#diabetes-sec"><i class="far fa-circle"></i>Diabetes</a>
+              </li>
+              <li class="nav-item" style="margin-right: 20px;margin-left: 20px;">
+                <a class="navbar-brand" href="#cancer-sec"><i class="fas fa-bacterium"></i>Breast cancer</a>
+              </li>
+              <li class="nav-item" style="margin-right: 20px;margin-left: 20px;">
+                <a class="navbar-brand" href="#liver-sec"><img src="static/liver/icon-liver.png" width="30px">Liver</a>
+              </li>
+            <li class="nav-item" style="margin-right: 20px;margin-left: 20px;">
+                <a class="navbar-brand" href="#kidney-sec"><i class="fa fa-heart" aria-hidden="true"></i>Kidney</a>
+              </li>
+        </ul>
+
+
+
+
+
+            <div class="info" style="background-color: #e7f3fe ;border-left: 6px solid #2196F3;margin-top: 20px;padding-top: 10px;padding-bottom: 10px;">
+                    <p><strong style="color: black; font-size: 20px; font-weight: 100;">Info!</strong><br>Please if you fill any of this Symptoms visit the Doctor as possible as you can.</p>
+                    <p>This website just gives you rough information so please visit the doctor.</p>
+            </div>
+
+
+            <!---- ------------------------------  Heart  Section  Disease!! ---------------------- --->
+
+            <section class="heart-section" id="heart-sec">
+
+                <div class="container" id="info-container-heart">
+
+                    <h2>Heart Disease!!!</h2>
+                    <div class="heading-underline"></div>
+                    <img src="static/heart/heart_model.jpg"  class="mx-auto d-block center">
+                    <p style="color: #ff0000; font-size: 20px; font-weight: 200;margin-top: 50px;">Heart disease refers to any condition affecting the heart.There are many types, some of which are preventable.</p>
+                    <p>Unlike cardiovascular disease, which includes problems with the entirecirculatory system, heart disease affects only the heart.</p>
+
+                    <!---- Symptoms Section --->
+
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">What are the symptoms of heart disease?</h5>
+                    <p>Sometimes heart disease may be “silent” and not diagnosed until a person experiences signs or symptoms of a heart attack,heart failure, or an arrhythmia. When these events happen, symptoms may include</p>
+                    <ul>
+                        <li>Chest pain, chest tightness, chest pressure and chest discomfort (angina).</li>
+                        <li>Shortness of breath.</li>
+                        <li>Pain, numbness, weakness or coldness in your legs or arms if the blood vessels in those parts of your body are narrowed.</li>
+                        <li>Pain in the neck, jaw, throat, upper abdomen or back.</li>
+                    </ul>
+
+
+                    <!---- TYPES Section --->
+
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">MOST COMMON TYPES !!!</h5>
+                    <ul>
+                        <li><a href="#">Coronary heart disease</a>: Coronary heart disease (CHD), or coronary artery disease,
+                                                  develops when the coronary arteries become too narrow. </li>
+                        <li><a href="#">High blood pressure (hypertension)</a>:A condition in which the force of the blood
+                                                      against the artery walls is too high.</li>
+                        <li><a href="#">High blood pressure (hypertension)</a>:A condition in which the force of the blood
+                                                      against the artery walls is too high.</li>
+                        <li><a href="#">Cardiac arrest</a>:Sudden, unexpected loss of heart function, breathing and consciousness.
+                            In cardiac arrest, the heart abruptly stops beating. Without prompt intervention,
+                                                      it can result in the person's death.The main symptom is loss of consciousness and unresponsiveness.</li>
+                        <li><a href="#">Heart failure</a>:A chronic condition in which the heart doesn't pump blood as well as it should.
+                                                    Heart failure can occur if the heart cannot pump (systolic) or fill (diastolic) adequately.</li>
+                        <li><a href="#">Stroke</a>:Damage to the brain from interruption of its blood supply.
+                                                                        A stroke is a medical emergency.</li>
+                        <li><a href="#">Arrhythmia</a>:Improper beating of the heart, whether irregular, too fast or too slow.</li>
+                    </ul>
+
+
+                    <!---- When Section --->
+
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">When to see a doctor</h5>
+                    <p>Seek emergency medical care if you have these heart disease symptoms:</p>
+                    <ul>
+                        <li>Chest pain</li>
+                        <li>Shortness of breath</li>
+                        <li>Fainting</li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <hr class="info-divider" style="margin: 4rem 0;">
+
+
+            <!---------------------------- Diabetes Section Disease!!------------------------------->
+
+
+            <section class="diabetes-section" id="diabetes-sec">
+
+                <div class="container" id="info-container-diabetes">
+
+                    <h2>Diabetes Disease!!</h2>
+                    <div class="heading-underline"></div>
+                    <img src="static/diabetes/diabetes_model.jpg" class="mx-auto d-block center">
+                    <p style="color: #ff0000; font-size: 20px; font-weight: 200;margin-top: 50px;">Diabetes
+                        is a condition that impairs the body’s ability to process blood glucose, otherwise known as blood sugar.</p>
+                    <p>Without ongoing, careful management, diabetes can lead to a buildup of sugars in the blood, which can increase the risk of dangerous complications, including stroke and heart disease.
+                        Different kinds of diabetes can occur, and managing the condition depends on the type. Not all forms of diabetes stem from a person being overweight or leading an inactive lifestyle. In fact, some are present from childhood.</p>
+
+
+
+                    <!---- TYPES Section --->
+
+                    <h5 style="color: black; font-size: 20px;font-weight: 100;padding-top: 20px;">MOST COMMON TYPES!!!</h5>
+                    <p>Three major diabetes types can develop: Type 1, type 2, and gestational diabetes.</p>
+                    <ul>
+                        <li><a href="#">Type I diabetes:</a>Also known as juvenile diabetes, this type occurs when the body fails to produce insulin.
+                                                    People with type I diabetes are insulin-dependent, which means they must take artificial insulin daily to stay alive.</li>
+                        <li><a href="#">Type 2 diabetes:</a>Type 2 diabetes affects the way the body uses insulin. While the body still makes insulin,
+                            unlike in type I, the cells in the body do not respond to it as effectively as they once did. This is the most common type
+                            of diabetes, according to the National Institute of Diabetes and Digestive and Kidney Diseases, and it has strong links with obesity.</li>
+                        <li><a href="#">Gestational diabetes:</a>This type occurs in women during pregnancy when the body can become less
+                                                    sensitive to insulin. Gestational diabetes does not occur in all women and usually resolves after giving birth.</li>
+                        <li><a href="#">Prediabetes:</a> A condition in which blood sugar is high, but not high enough to be type 2 diabetes.
+                            Without intervention, it's likely to become type 2 diabetes within 10 years. Many people with prediabetes have no symptoms.</li>
+                    </ul>
+
+
+                    <!---- Health problems Section --->
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">What health problems can people with diabetes develop?</h5>
+                    <p>Over time, high blood glucose leads to problems such as:</p>
+                    <ul>
+                        <li>Heart disease</li>
+                        <li>Stroke</li>
+                        <li>Kidney disease</li>
+                        <li>Eye problems</li>
+                        <li>Dental disease</li>
+                        <li>Nerve damage</li>
+                        <li>Foot problems</li>
+                    </ul>
+
+                    <!---- Exercises Section --->
+
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">Exercise and diet tips</h5>
+                    <p>If a doctor diagnoses a person with type 2 diabetes, they will often recommend making
+                        lifestyle changes to support weight loss and overall health.</p><br>
+                    <p>Steps a person can take to embrace a lifestyle with diabetes include:</p>
+                    <ul>
+                        <li>Eating a diet high in fresh, nutritious foods, including whole grains, fruits, vegetables,
+                                                     lean proteins, low-fat dairy, and healthy fat sources, such as nuts.</li>
+                        <li>Avoiding high-sugar foods that provide empty calories, or calories that do not have
+                                                    other nutritional benefits, such as sweetened sodas, fried foods, and high-sugar desserts.</li>
+                        <li>Refraining from drinking excessive amounts of alcohol or keeping intake to less than one
+                                                     drink a day for women or two drinks a day for men.</li>
+                        <li>Engaging in at least 30 minutes exercise a day on at least 5 days of the week,
+                                                     such as of walking, aerobics, riding a bike, or swimming.</li>
+                        <li>Recognizing signs of low blood sugar when exercising,
+                                                     including dizziness, confusion, weakness, and profuse sweating.</li>
+                    </ul>
+
+                    <!---- Affective Section --->
+
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">How much is too much?</h5>
+                    <p>Insulin helps people with diabetes live an active lifestyle. However, it can lead to serious side effects,especially if a person administers too much.</p>
+                    <p>Excessive insulin can cause hypoglycemia, or extremely low blood sugar, and lead to nausea, sweating, and shaking.</p>
+                    <p>It is essential that people measure insulin carefully and eat a consistent diet that balances blood sugar levels as much as possible.</p>
+                </div>
+
+            </section>
+
+
+            <hr class="info-divider" style="margin: 4rem 0;">
+
+            <!--------------------------------------- Breast cancer Section  Disease!!  ---------------------------------------->
+
+
+            <section class="cancer-section" id="cancer-sec">
+                <div class="container" id="info-container-cancer">
+                    <h2>Breast cancer !!</h2>
+                    <div class="heading-underline"></div>
+                    <img src="static/cancer/breast_cancer_model.jpg" class="mx-auto d-block center">
+                    <p style="color: #ff0000; font-size: 20px; font-weight: 200;margin-top: 50px;">Breast cancer is a type of cancer that starts in the breast. Cancer starts when cells begin to grow out of control.</p>
+                    <p>Breast cancer cells usually form a tumor that can often be seen on an x-ray or felt as a lump. Breast cancer occurs almost entirely in women, but men can get breast cancer, too.</p>
+
+                    <!---- Signs and symptoms Section --->
+
+                    <h5 style="color: black; font-size: 20px;font-weight: 100;padding-top: 20px;">What are the signs and symptoms?</h5>
+                    <p>The first symptoms of breast cancer usually appear as an area of thickened tissue in the
+                        breast or a lump in the breast or an armpit.Symptoms of breast cancer include a lump in the breast,
+                        bloody discharge from the nipple and changes in the shape or texture of the nipple or breast.</p>
+                    <ul>
+                        <li>Pain in the armpits or breast that does not change with the monthly cycle</li>
+                        <li>Pitting or redness of the skin of the breast, similar to the surface of an orange</li>
+                        <li>A rash around or on one of the nipples</li>
+                        <li>Discharge from a nipple, possibly containing blood</li>
+                        <li>A change in the size or shape of the breast</li>
+                        <li>Peeling, flaking, or scaling of the skin on the breast or nipple</li>
+                    </ul>
+
+
+
+
+                    <!---- Stages Section --->
+
+                    <h5 style="color: black; font-size: 20px;font-weight: 100;padding-top: 20px;">Stages</h5>
+                    <p>A doctor stages cancer according to the size of the tumor and whether it has spread to lymph nodes or other parts of the body. There are different ways of staging breast cancer.
+                        One way is from stage 0–4, with subdivided categories at each numbered stage. </p>
+                    <ul>
+                        <li><a href="#">Stage 0:</a>Known as ductal carcinoma in situ (DCIS), the cells are limited to within the ducts and have not invaded surrounding tissues.</li>
+                        <li><a href="#">Stage 1:</a>At this stage, the tumor measures up to 2 centimeters (cm) across. It has not affected any lymph nodes, or there are small groups of cancer cells in the lymph nodes.</li>
+                        <li><a href="#">Stage 2:</a>The tumor is 2 cm across, and it has started to spread to nearby nodes, or is 2–5 cm across and has not spread to the lymph nodes.</li>
+                        <li><a href="#">Stage 3:</a> The tumor is up to 5 cm across, and it has spread to several lymph nodes or the tumor is larger than 5 cm and has spread to a few lymph nodes.</li>
+                        <li><a href="#">Stage 4:</a>The cancer has spread to distant organs, most often the bones, liver, brain, or lungs.</li>
+                    </ul>
+
+                    <!---- Causes Section --->
+
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">What causes Breast cancer disease?</h5>
+                    <p>After puberty, a woman’s breast consists of fat, connective tissue, and thousands of lobules. These are tiny glands that produce milk for breastfeeding. Tiny tubes, or ducts, carry the milk toward the nipple.</p>
+                    <p>Breast cancer usually starts in the inner lining of milk ducts or the lobules that supply them with milk. From there, it can spread to other parts of the body.</p>
+
+                    <!---- Types Section --->
+
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">Types.</h5>
+                    <p>There are several different types of breast cancer, including:</p>
+                    <ul>
+                        <li><a href="#">Ductal carcinoma:</a> This begins in the milk duct and is the most common type.</li>
+                        <li><a href="#">Lobular carcinoma:</a> This starts in the lobules.</li>
+                    </ul>
+
+                    <!---- Diagnosis Section --->
+
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">Diagnosis</h5>
+                    <p>Finding the cause and extent of liver damage is important in guiding treatment.
+                        Your doctor is likely to start with a health history and thorough physical examination.
+                        Your doctor may then recommend:</p>
+                    <ul>
+                        <li>Breast exam.</li>
+                        <li>Imaging tests.
+                            <ul>
+                                <li>Mammogram</li>
+                                <li>Ultrasound</li>
+                                <li>MRI</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <hr class="info-divider" style="margin: 4rem 0;">
+
+            <!-------------------------- Liver Section Disease!! ------------------------->
+
+            <section class="liver-section" id="liver-sec">
+
+                <div class="container" id="info-container-liver">
+                    <h2>Liver Disease!!</h2>
+                    <div class="heading-underline"></div>
+                    <img src="static/liver/liver_model.jpg" class="mx-auto d-block center">
+                    <p style="color: #ff0000; font-size: 20px; font-weight: 200;margin-top: 50px;">The liver plays an important role in many bodily functions from protein production and
+                        blood clotting to cholesterol,glucose (sugar), and iron metabolism.</p>
+                    <p>Liver disease is any disturbance of liver function that causes illness. The liver is responsible for many critical functions within the body and should it become
+                        diseased or injured, the loss of those functions can cause significant damage to the body. Liver disease is also referred to as hepatic disease.</p>
+
+
+                    <!---- Symptoms Section --->
+
+                    <h5 style="color: black; font-size: 20px;font-weight: 100;padding-top: 20px;">What are the signs and symptoms of liver disease?</h5>
+                    <p>Liver disease doesn't always cause noticeable signs and symptoms. If signs and symptoms of liver disease do occur, the may include:</p>
+                    <ul>
+                        <li>Skin and eyes that appear yellowish (jaundice)</li>
+                        <li>Abdominal pain and swelling</li>
+                        <li>Swelling in the legs and ankles</li>
+                        <li>Itchy skin</li>
+                        <li>Dark urine color</li>
+                        <li>Nausea or vomiting</li>
+                        <li>Loss of appetite</li>
+                    </ul>
+
+
+
+                    <!---- Causes Section --->
+
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">What causes liver disease?</h5>
+                    <p>Many diseases and conditions can affect the liver, for example, certain drugs like excessive amounts of acetaminophen, and acetaminophen combination medications like Vicodin and Norco, as well as statins,
+                        cirrhosis, alcohol abuse, hepatitis A, B, C, D, and E, infectious mononucleosis (Epstein Barr virus), nonalcoholic fatty liver disease (NASH), and iron overload (hemochromatosis).</p>
+
+                    <!---- TYPES Section --->
+
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">MOST COMMON TYPES !!!</h5>
+                    <ul>
+                        <li><a href="#">Non-alcoholic fatty liver disease (NAFLD)</a>: Most people have no symptoms. In rare cases, people may
+                            experience fatigue, pain or weight loss. Over time, inflammation and scarring of the liver (cirrhosis) can occur. </li>
+                        <li><a href="#">Hepatitis C</a>:Most people have no symptoms. Those who do develop symptoms may have fatigue, nausea, loss of appetite and yellowing of the eyes and skin.</li>
+                        <li><a href="#">Hepatitis B</a>:Symptoms are variable and include yellowing of the eyes, abdominal pain and dark urine. Some people, particularly children, don't experience any symptoms. In chronic cases, liver failure, cancer or scarring can occur.</li>
+                        <li><a href="#">Cirrhosis</a>:Initially patients may experience fatigue, weakness and weight loss. During later stages, patients may develop jaundice (yellowing of the skin), gastrointestinal bleeding, abdominal swelling and confusion.</li>
+                        <li><a href="#">Alcoholic hepatitis</a>:Symptoms include yellow skin and eyes along with increasing stomach size due to fluid accumulation.</li>
+                    </ul>
+
+
+                    <!---- When Section --->
+
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">When to see a doctor</h5>
+                    <p>Make an appointment with your doctor if you have any persistent signs or symptoms that worry you. Seek immediate medical attention if you have abdominal pain that is so severe that you can't stay still.</p>
+                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">Diagnosis</h5>
+                    <p>Finding the cause and extent of liver damage is important in guiding treatment. Your doctor is likely to start with a health history and thorough physical examination. Your doctor may then recommend:</p>
+                    <ul>
+                        <li>Blood tests.</li>
+                        <li>Imaging tests.</li>
+                        <li>Checking a tissue sample.</li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <hr class="info-divider" style="margin: 4rem 0;">
+
+            <!-------------------------- Kidney  Section Disease!! ------------------------------------>
+
+            <section class="kidney-section" id="kidney-sec">
+                <div class="container" id="info-container-kidney ">
+
+                    <h2>kidney Disease!!</h2>
+                    <div class="heading-underline"></div>
+                </div>
+
+            </section>
+
+
+
+</div>
+
+{% endblock content %}

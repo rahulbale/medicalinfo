@@ -1,0 +1,168 @@
+
+{% extends "layout2.html" %}
+
+{% block content %}
+
+
+<!---
+<div class="landing">
+     <div class="home-wrap">
+         <img src="static/kidney/kidney.jpg"  class="img-responsive" alt="Responsive image">
+         <div class="middle">
+             <div class="mouse"></div>
+         </div>
+     </div>
+</div>--->
+
+
+<div class="landing">
+     <div class="home-wrap">
+         <div class="responsive" style="background-image: url('../static/kidney/kidney2.jpg');
+         width: 100%;max-width: 100%;height: 650px;backgound-position: center;
+         background-size: cover;background-attachment: fixed;">
+         <div class="middle">
+            <div class="mouse"></div>
+        </div>
+         </div>
+     </div>
+</div>
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1 style="padding-bottom: 2.2rem;"> Welcome to Medical Info of Kidney Section</h1>
+
+        <h4>Here you will know your health ragarding Kidney desies.</h4>
+        <div class="heading-underline"></div>
+    </div>
+</div>
+
+<div id="section" class="offset">
+     <div class="fixed-backgrond">
+            <div class="container">
+
+
+                <div class="row section">
+                    <div class="col border border-info">
+                        <h1 >Kidney Disease</h1>
+                        <h4>Know the detail realted to Kidney Disease!!</h4>
+                        <p class="text-muted">
+                            We have provided some information regarding the Kidney disease.
+                        </p>
+                        <a class="btn btn-outline-danger"> Read More></a>
+
+                    </div>
+
+                    <div class="col-5">
+                        <div class="box">
+                            <div class="b b1 text-center"></div>
+                            <div class="b b2"></div>
+                            <img src="static/kidney/icon-kidney.png">
+                            <div class="b b3"></div>
+                            <div class="b b4"></div>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+     </div>
+</div>
+
+
+
+<div class="jumbotron" id="heading">
+     <div class="row dark text-center">
+        <div class="col-12">
+            <h1 class="heading ">Kidney Disease Checkup !!</h1>
+            <div class="heading-underline"></div>
+        </div>
+     </div>
+</div>
+
+<div class="offset" id="form-details">
+<div class="container">
+    <div class="row">
+
+        <div class="col-12">
+            <h2 class="heading text-center">Enter yours value :</h2>
+        </div>
+        <form class="form-class" id="form-class-id">
+            <div class="row">
+                    <div class="col-md-6 mb-3 form-class-id">
+                        <label for="age">Age : </label>
+                        <input type="text" class="form-control" id="age" placeholder=" Range form (0 to 100)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="sex">Sex : </label>
+                        <input type="text" class="form-control" id="sex" placeholder="(1 = male; 0 = female)">
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cpt">Chest pain type :</label>
+                        <input type="text" class="form-control" id="cpt" placeholder="Enter values (1 to 4)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="trestbps">Trestbps :</label>
+                        <input type="text" class="form-control" id="trestbps" placeholder=" Enter Numeric value( eg : 140)mm/Hg ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="chol">Cholestoral :</label>
+                        <input type="text" class="form-control" id="chol" placeholder="Enter Numeric value( eg : 289) mg/dl">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="fbs">Fasting blood sugar : </label>
+                        <input type="text" class="form-control" id="fbs" placeholder="(( > 120 mg/dl) 1 = true; 0 = false)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="restecg">Resting electrocardiographic results :</label>
+                        <input type="text" class="form-control" id="restecg" placeholder="(0 = normal; 1 = having ST-T; 2 = hypertrophy)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="thalach">Maximum heart rate achieved :</label>
+                        <input type="text" class="form-control" id="thalach" placeholder="Enter the mm/Hg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="exang">Exercise induced angina : </label>
+                        <input type="text" class="form-control" id="exang" placeholder="(1 = yes; 0 = no)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="oldpeak">ST depression induced by exercise relative to rest  :</label>
+                        <input type="text" class="form-control" id="oldpeak" placeholder="Enter Numeric value">
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="slope">Slope of the peak exercise ST segment : </label>
+                        <input type="text" class="form-control" id="slope" placeholder="(1-upsloping, 2-flat, 3-downsloping)">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="ca">Number of major vessels colored by flourosopy :</label>
+                        <input type="text" class="form-control" id="ca" placeholder=" Enter the values range from (0-3)">
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="thal">Thal : </label>
+                        <input type="text" class="form-control" id="thal" placeholder="Exercise induced angina">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="num">Diagnosis of heart disease :</label>
+                        <input type="text" class="form-control" id="num" placeholder="Enter the values 0: < 50% diameter narrowing, 1: > 50% diameter narrowing">
+                    </div>
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <button type="submit"  value="Submit" class="btn btn-success  btn-lg">Predict!!</button>
+                </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+{% endblock content %}

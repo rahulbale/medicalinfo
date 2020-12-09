@@ -1,0 +1,268 @@
+
+{% extends "layout2.html" %}
+{% block content %}
+
+
+
+<!---
+<div class="landing">
+     <div class="home-wrap">
+                <img src="static/cancer/cancer.jpg"  class="img-responsive" alt="Responsive image">
+         <div class="middle">
+             <div class="mouse"></div>
+         </div>
+     </div>
+</div>
+
+-->
+
+<div class="landing">
+     <div class="home-wrap">
+         <div class="howe-inner" style="background-image: url('../static/cancer/cancer.jpg');width: 100%;max-width: 100%;height: 600px;background-attachment: fixed;background-size: cover;background-size: 100% 100%;">
+         <div class="middle">
+            <div class="mouse"></div>
+        </div>
+         </div>
+     </div>
+</div>
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1 style="padding-bottom: 2.2rem;"> Welcome to Medical Info of Cancer Section</h1>
+
+        <h4>Here you will know your health ragarding Cancer desies.</h4>
+        <div class="heading-underline"></div>
+    </div>
+</div>
+
+<div id="section" class="offset">
+    <div class="fixed-backgrond">
+        <div class="container">
+            <div class="row section">
+                <div class="col border border-info">
+                    <h1 >Breast Cancer Disease</h1>
+                    <h4>Know the detail realted to Breast Cancer Disease!!</h4>
+                    <p class="text-muted">
+                        We have provided some information regarding the Breast Cancer disease.
+                    </p>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal">Read More ></button>
+                    <div class="modal fade" id="myModal" data-backdrop="static" role="dialog">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable model-lg" style="width: 55%;max-width: 70%;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"
+                                    style="color: black; font-size: 30px; font-weight: 500;">Breast Cancer disease.</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="static/cancer/breast_cancer_model.jpg" class="mx-auto d-block"
+                                       style="width: 60%;height: 250px;background-attachment: fixed;">
+                                    <p style="color: #ff0000; font-size: 20px; font-weight: 200;margin-top: 50px;">Breast cancer is a
+                                        type of cancer that starts in the breast. Cancer starts when cells begin to
+                                        grow out of control.</p>
+                                    <p>Breast cancer cells usually form a tumor that can often
+                                        be seen on an x-ray or felt as a lump. Breast cancer occurs almost entirely
+                                        in women, but men can get breast cancer, too.</p>
+
+                                    <!---- Signs and symptoms Section --->
+
+                                    <h5 style="color: black; font-size: 20px;font-weight: 100;padding-top: 20px;">What are the signs and symptoms?</h5>
+                                    <p>The first symptoms of breast cancer usually appear as an area of thickened tissue in the
+                                        breast or a lump in the breast or an armpit.Symptoms of breast cancer include a lump in the breast,
+                                        bloody discharge from the nipple and changes in the shape or texture of the nipple or breast.</p>
+                                    <ul>
+                                        <li>Pain in the armpits or breast that does not change with the monthly cycle</li>
+                                        <li>Pitting or redness of the skin of the breast, similar to the surface of an orange</li>
+                                        <li>A rash around or on one of the nipples</li>
+                                        <li>Discharge from a nipple, possibly containing blood</li>
+                                        <li>A change in the size or shape of the breast</li>
+                                        <li>Peeling, flaking, or scaling of the skin on the breast or nipple</li>
+                                    </ul>
+
+                                    <!---- Info Note Section --->
+
+                                    <div class="info" style="background-color: #e7f3fe ;border-left: 6px solid #2196F3;padding-top: 10px;padding-bottom: 10px;">
+                                        <p><strong style="color: black; font-size: 20px; font-weight: 100;">Info!</strong><br>Please if you fill any of this Symptoms visit the Doctor as possible as you can.</p>
+                                        <p>This website just gives you rough information so please visit the doctor.</p>
+                                    </div>
+
+
+                                    <!---- Stages Section --->
+
+                                    <h5 style="color: black; font-size: 20px;font-weight: 100;padding-top: 20px;">Stages</h5>
+                                    <p>A doctor stages cancer according to the size of the tumor and whether it has spread to
+                                        lymph nodes or other parts of the body. There are different ways of staging breast cancer.
+                                        One way is from stage 0–4, with subdivided categories at each numbered stage. </p>
+                                    <ul>
+                                        <li><a href="#">Stage 0:</a>Known as ductal carcinoma in situ (DCIS),
+                                            the cells are limited to within the ducts and have not invaded surrounding tissues.</li>
+                                        <li><a href="#">Stage 1:</a>At this stage, the tumor measures up to 2 centimeters
+                                            (cm) across. It has not affected any lymph nodes, or there are small groups of cancer cells in the lymph nodes.</li>
+                                        <li><a href="#">Stage 2:</a>The tumor is 2 cm across, and it has started to spread
+                                            to nearby nodes, or is 2–5 cm across and has not spread to the lymph nodes.</li>
+                                        <li><a href="#">Stage 3:</a> The tumor is up to 5 cm across, and it has spread to several lymph
+                                            nodes or the tumor is larger than 5 cm and has spread to a few lymph nodes.</li>
+                                        <li><a href="#">Stage 4:</a>The cancer has spread to distant organs,
+                                            most often the bones, liver, brain, or lungs.</li>
+                                    </ul>
+
+                                    <!---- Causes Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">What causes Breast cancer disease?</h5>
+                                    <p>After puberty, a woman’s breast consists of fat, connective tissue, and thousands of lobules. These are tiny glands
+                                        that produce milk for breastfeeding. Tiny tubes, or ducts, carry the milk toward the nipple.</p>
+                                    <p>Breast cancer usually starts in the inner lining of milk ducts or the lobules that supply them with milk.
+                                        From there, it can spread to other parts of the body.</p>
+
+                                    <!---- Types Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">Types.</h5>
+                                    <p>There are several different types of breast cancer, including:</p>
+                                     <ul>
+                                         <li><a href="#">Ductal carcinoma:</a> This begins in the milk duct and is the most common type.</li>
+                                        <li><a href="#">Lobular carcinoma:</a> This starts in the lobules.</li>
+                                    </ul>
+
+                                    <!---- Diagnosis Section --->
+
+                                    <h5 style="color: black; font-size: 20px; font-weight: 100;padding-top: 20px;">Diagnosis</h5>
+                                    <p>Finding the cause and extent of liver damage is important in guiding treatment.
+                                          Your doctor is likely to start with a health history and thorough physical examination.
+                                          Your doctor may then recommend:</p>
+                                    <ul>
+                                        <li>Breast exam.</li>
+                                        <li>Imaging tests.
+                                           <ul>
+                                               <li>Mammogram</li>
+                                               <li>Ultrasound</li>
+                                               <li>MRI</li>
+                                           </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!---- End of all Section --->
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---
+                <div class="col">
+                    <div class="box">
+                        <div class="b b1 text-center"></div>
+                        <div class="b b2"></div>
+                        <i class="fas fa-bacterium fa-5x"></i>
+                        <div class="b b3"></div>
+                        <div class="b b4"></div>
+                    </div>
+                </div>-->
+
+                <div class="col">
+                    <div class="center">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <i class="fas fa-bacterium fa-5x"></i>
+                        <div class="circle3"></div>
+                        <div class="circle4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="jumbotron" id="heading">
+     <div class="row dark text-center">
+        <div class="col-12">
+            <h1 class="heading">Breast Cancer Disease Checkup !!</h1>
+            <div class="heading-underline"></div>
+        </div>
+     </div>
+</div>
+
+<div class="offset" id="form-details">
+<div class="container">
+    <div class="row dark1">
+
+        <div class="col-12">
+            <h2 class="heading text-center">Enter yours value :</h2>
+        </div>
+        <form class="form-class" action="/result" method="post" id="form-class-id">
+            <div class="row">
+                <div class="col-md-6 mb-3 form-class-id">
+                    <label for="concave_points_worst">Concave Points Worst : </label>
+                    <input type="text" class="form-control" id="concave_points_worst" name="concave_points_worst" placeholder="Enter Numeric value( eg : 0.1860)">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="concave_points_mean">Concave Points Mean : </label>
+                    <input type="text" class="form-control" id="concave_points_mean" name="concave_points_mean" placeholder="Enter Numeric value( eg : 0.14710)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3 form-class-id">
+                    <label for="perimeter_worst">Perimeter Worst : </label>
+                    <input type="text" class="form-control" id="perimeter_worst" name="perimeter_worst" placeholder="Enter Numeric value( eg : 152.50)">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="perimeter_mean">Perimeter Mean : </label>
+                    <input type="text" class="form-control" id="perimeter_mean" name="perimeter_mean" placeholder="Enter Numeric value( eg : 130.00	)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3 form-class-id">
+                    <label for="area_worst">Area Worst : </label>
+                    <input type="text" class="form-control" id="area_worst" name="area_worst" placeholder="Enter Numeric value( eg : 77.58)">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="radius_worst">Radius Worst : </label>
+                    <input type="text" class="form-control" id="radius_worst" name="radius_worst" placeholder="Enter Numeric value( eg : 23.57)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3 form-class-id">
+                    <label for="radius_mean">Radius Mean : </label>
+                    <input type="text" class="form-control" id="radius_mean" name="radius_mean" placeholder="Enter Numeric value( eg : 11.54)">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="area_mean">Area Mean : </label>
+                    <input type="text" class="form-control" id="area_mean" name="area_mean" placeholder="Enter Numeric value( eg : 386.1)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="concavity_worst">Concavity Worst :</label>
+                    <input type="text" class="form-control" id="concavity_worst" name="concavity_worst" placeholder="Enter Numeric value( eg : 0.7119)">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="concavity_mean">Concavity Mean :</label>
+                    <input type="text" class="form-control" id="concavity_mean" name="concavity_mean" placeholder=" Enter Numeric value( eg : 0.1974)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="area_se">Area Se :</label>
+                    <input type="text" class="form-control" id="area_se" name="area_se" placeholder="Enter Numeric value( eg : 94.03)">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="radius_se">Radius Se :</label>
+                    <input type="text" class="form-control" id="radius_se" name="radius_se" placeholder="Enter Numeric value( eg : 0.7456)">
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-success  btn-lg">Predict!!</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+</div>
+
+{% endblock content %}
