@@ -140,7 +140,7 @@ def ValuePredictor(to_predict_list, size):
     elif (size == 13):  # Heart
         loaded_model = joblib.load("flask_main/models/heart_model")
         result = loaded_model.predict(to_predict)
-    return result[0]
+        return result[0]
 
 standard_to = StandardScaler()
 
