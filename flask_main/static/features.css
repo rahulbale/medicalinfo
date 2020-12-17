@@ -49,10 +49,9 @@ body{
     top: 50%;
     transform: translate(-50%,-50%);
 }
-.mouse{
-
-    width: 100px;
-    height: 180px;
+.mouse {
+    width: 60px;
+    height: 120px;
     border: 4px solid #333;
     border-radius: 60px;
 }
