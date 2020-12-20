@@ -1,0 +1,122 @@
+
+{% extends "layout2.html" %}
+{% block content %}
+
+
+<div class="landing">
+     <div class="home-wrap">
+         <div class="responsive" style="background-image: url('../static/kidney/kidney2.jpg');
+         width: 100%;max-width: 100%;height: 650px;backgound-position: center;
+         background-size: cover;background-attachment: fixed;">
+         <div class="middle">
+            <div class="mouse"></div>
+        </div>
+         </div>
+     </div>
+</div>
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1 style="padding-bottom: 2.2rem;"> Welcome to Medical Info of Kidney Section</h1>
+
+        <h4>Here you will know your health ragarding Kidney desies.</h4>
+        <div class="heading-underline"></div>
+    </div>
+</div>
+
+<div id="section" class="offset">
+     <div class="fixed-backgrond">
+            <div class="container">
+
+
+                <div class="row section">
+                    <div class="col border border-info">
+                        <h1 >Kidney Disease</h1>
+                        <h4>Know the detail realted to Kidney Disease!!</h4>
+                        <p class="text-muted">
+                            We have provided some information regarding the Kidney disease.
+                        </p>
+                        <a class="btn btn-outline-danger"> Read More></a>
+
+                    </div>
+
+                    <div class="col-5">
+                        <div class="box">
+                            <div class="b b1 text-center"></div>
+                            <div class="b b2"></div>
+                            <img src="static/kidney/icon-kidney.png">
+                            <div class="b b3"></div>
+                            <div class="b b4"></div>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+     </div>
+</div>
+
+
+
+<div class="jumbotron" id="heading">
+     <div class="row dark text-center">
+        <div class="col-12">
+            <h1 class="heading ">Kidney Disease Checkup !!</h1>
+            <div class="heading-underline"></div>
+        </div>
+     </div>
+</div>
+
+<div class="offset" id="form-details">
+<div class="container">
+    <div class="row">
+
+        <div class="col-12">
+            <h2 class="heading text-center">Enter yours value :</h2>
+        </div>
+        <form class="form-class" action="{{ url_for('result')}}" method="post" id="form-class-id">
+            <div class="row">
+                    <div class="col-md-6 mb-3 form-class-id">
+                        <label for="bp">Blood Pressure</label>
+                        <input class="form-control" id="bp" name="Year" required="required" placeholder="Blood Pressure">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="sg">Specific Gravity</label>
+                        <input class="form-control" step="any" id="sg" name="sg" required="required" placeholder="Specific Gravity">
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="al">Albumin</label>
+                        <input class="form-control" id="al" name="al" required="required" placeholder="Albumin">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="su">Blood Sugar Level</label>
+                        <input class="form-control" id="su" name="su" required="required" placeholder="Blood Sugar Level">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="rbc">Red Blood Cells Count</label>
+                        <input class="form-control" id="rbc" name="rbc" required="required" placeholder="Red Blood Cells Count">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="pc">Pus Cell Count</label>
+                        <input class="form-control" id="pc" name="pc" required="required" placeholder="Pus Cell Count">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="pcc">Pus Cell Clumps</label>
+                        <input class="form-control" id="pcc" name="pcc" required="required" placeholder="Pus Cell Clumps">
+                    </div>
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <button type="submit"  value="Submit" class="btn btn-success  btn-lg">Predict!!</button>
+                </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+{% endblock content %}
